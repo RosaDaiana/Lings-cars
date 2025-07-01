@@ -1,0 +1,357 @@
+@import url('https://fonts.googleapis.com/css2?family=Days+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --black-text: #3C3C3C;
+    --white-text: #FFFFFF;
+    --light-blue: #8F9FC2;
+    --dark-blue: #3F5068;
+    --golden: #CF9A7E;
+}
+
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: poppins, sans-serif;
+    margin: 0;
+    background-color: #f4f4f9;
+}
+
+p, h4, h3, h2, h1 {
+    margin: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* --- Cabecera --- */
+.main-header {
+    background-color: #ffffffb4;
+    padding: 8px 0;
+}
+
+.main-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.line {
+    width: 100px;
+    height: 3px;
+    background-color: var(--golden);
+    /* display: flex */
+    position: relative;
+    margin: auto;
+}
+
+.logo img {
+    height: 80px;
+}
+
+.main-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.main-nav li {
+    margin-left: 40px;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: #364053;
+    font-size: 16px;
+}
+
+.main-nav a:hover {
+    color: var(--golden);
+    transition: .5s;
+}
+
+/* --- Sección Ling's Story --- */
+.story-section {
+    background-color: var(--light-blue);
+    padding: 60px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.story-section .container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.story-content {
+    flex: 1;
+    animation: sliderReveal 1s ease forwards;
+    color: var(--white-text);
+}
+
+.story-content h1 {
+    font-size: 48px;
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-family: days one, sans-serif;
+    animation-delay: .5s;
+}
+
+.story-content p {
+    font-size: 16px;
+    line-height: 1.6;
+    animation-delay: 2s;
+}
+
+.story-image-wrapper {
+    flex-shrink: 0;
+}
+
+.story-image {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    object-fit: contain;
+    animation: left-right .8s ease-in-out alternate infinite;
+}
+
+/* --- Sección Nuestro Equipo --- */
+.team-section {
+    padding: 80px 0;
+    background-color: #fff;
+}
+
+.team-section h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: var(--dark-blue);
+}
+
+.team-grid {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.team-card {
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    width: 280px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.team-card img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.team-card h3 {
+    margin: 10px 0 5px;
+    font-size: 20px;
+}
+
+.team-card p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.social-icons a {
+    margin: 0 8px;
+    text-decoration: none;
+    color: #555;
+    font-size: 18px; /* Placeholder para tamaño de ícono */
+}
+
+/* --- Sección de Contacto --- */
+.cta-section {
+    padding: 60px 0;
+    align-items: flex-start;
+    width: 100%;
+    margin: auto;
+}
+
+.cta-section h2 {
+    color: var(--dark-blue);
+    font-size: 32px;
+    font-weight: bold;
+    margin: 0 auto;
+    max-width: 960px;
+    padding-left: 12px;
+}
+
+.cta-section .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 20px 16px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    margin: 0 12px;
+}
+
+.cta-text {
+    color: var(--black-text);
+    font-size: 18px;
+}
+
+.cta-button {
+    background-color: var(--dark-blue);
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 18px;
+}
+
+.cta-button:hover {
+    background-color: #2c3f5a;
+}
+
+/* --- Footer --- */
+.main-footer {
+    background-color: var(--dark-blue);
+    color: #f0f0f0;
+    padding: 50px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.footer-about, .footer-services, .footer-contact {
+    flex: 1;
+}
+
+.footer-logo {
+    height: 80px;
+    margin-bottom: 15px;
+}
+
+.footer-about p {
+    color: var(--white-text);
+    line-height: 1.6;
+}
+
+.footer-services h4, .footer-contact h4 {
+    font-size: 18px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.footer-services ul, .footer-contact ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-services li, .footer-contact li {
+    margin-bottom: 12px;
+}
+
+.footer-services a {
+    text-decoration: none;
+    color: var(--white-text);
+}
+
+.footer-services a:hover {
+    color: var(--golden);
+    transition: .5s;
+}
+
+.footer-contact li {
+    display: flex;
+    align-items: center;
+    color: var(--white-text);
+}
+
+.footer-contact i {
+    color: #c8a488;
+    margin-right: 12px;
+    width: 20px;
+    text-align: center;
+}
+
+/* Media Queries */
+
+@media (max-width: 768px) {
+    .main-header .container {
+        flex-direction: column;
+    }
+
+    .logo img {
+        width: 160px;
+        height: auto;
+    }
+
+    .story-image-wrapper img {
+        display: none;
+    }
+
+    .footer-content {
+        flex-direction: column;
+    }
+
+    .cta-section .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+/* Animaciones */
+
+@keyframes translateXY {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes sliderReveal {
+  0% {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes left-right {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform:rotate(10deg);
+    }
+    100% {
+        transform: rotate(-15deg);
+    }
+}
