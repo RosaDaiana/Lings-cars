@@ -16,3 +16,6 @@ Aquí se implementó el diseño creado en Figma usando HTML y CSS para la creaci
 
 ## Etapa 4: Implementación de las demás páginas 💪
 Finalmente se desarrolló la implementación de las demás páginas (about, contact) para luego subir la página a Internet usando GitHub Pages
+
+## Etapa Final: Implementación de la última página usando bootstrap 📔
+En esta etapa se implementó la página sobre nosotros usando la librería de bootstrap.
