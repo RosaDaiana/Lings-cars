@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact - Ling's Cars</title>
     <link rel="stylesheet" href="src/css/contact.css">
+    <link rel="stylesheet" href="src/css/general.css">
 </head>
 <body>
 
@@ -15,9 +16,9 @@
             </div>
             <nav class="main-nav">
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About us</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">Sobre nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contáctanos</a></li>
                 </ul>
             </nav>
         </div>
@@ -27,60 +28,70 @@
         <div class="main-content-wrapper">
             <div class="container">
                 <section class="contact-form-section">
-                    <h1>Send Us a Message</h1>
+                    <h1>Envíanos un mensaje</h1>
                     <form action="#" method="POST">
                         <div class="form-group">
-                            <label for="full-name">Full Name <span>*</span></label>
+                            <label for="full-name">Nombre completo <span>*</span></label>
                             <input type="text" id="full-name" name="full-name" required>
                         </div>
                         <div class="form-group">
-                            <label for="email">Email Address <span>*</span></label>
+                            <label for="email">Dirección de correo electrónico <span>*</span></label>
                             <input type="email" id="email" name="email" required>
                         </div>
                         <div class="form-group">
-                            <label for="phone">Phone Number <span>*</span></label>
+                            <label for="phone">Número de teléfono <span>*</span></label>
                             <input type="tel" id="phone" name="phone" required>
                         </div>
                         <div class="form-group">
-                            <label for="enquiry">Your Enquiry <span>*</span></label>
+                            <label for="enquiry">Su consulta <span>*</span></label>
                             <input type="text" id="enquiry" name="enquiry" required>
                         </div>
                         <div class="form-group">
-                            <label for="message">Message (optional)</label>
+                            <label for="message">Mensaje (opcional)</label>
                             <textarea id="message" name="message"></textarea>
                         </div>
-                        <button type="submit" class="submit-button">Send Message</button>
+                        <button type="submit" class="submit-button">Enviar mensaje</button>
                     </form>
                 </section>
             </div>
         </div>
+
+        <section class="map-section">
+            <div class="container">
+                <h1>¡Visita nuestra oficina!</h1>
+                <div class="faq-divider"></div>
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2290.6783959434197!2d-1.646964222678674!3d54.96120147280151!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487e79e3274315af%3A0x5d4a4ea018ac2004!2sLINGsCARS!5e0!3m2!1ses-419!2spe!4v1752519739827!5m2!1ses-419!2spe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </section>
         
         <section class="faq-section">
             <div class="container">
-                <h2>Frequently Asked Questions</h2>
+                <h2>Preguntas frecuentes</h2>
                 <div class="faq-divider"></div>
                 <details class="faq-item">
-                    <summary>What documents do I need to rent a car?</summary>
+                    <summary>¿Qué documentos necesito para rentar un coche?</summary>
                     <div class="faq-answer">
-                        <p>You will need a valid driver's license, a credit card in your name, and a form of identification like a passport or national ID card. The specific requirements may vary slightly depending on the location and vehicle type.</p>
+                        <p>Necesitarás una licencia de conducir válida, una tarjeta de crédito en su nombre y un documento de identificación como un pasaporte o tarjeta de identificación nacional. Las especificaciones pueden variar ligeramente dependiendo de la ubicación y el tipo de vehículo.</p>
                     </div>
                 </details>
                 <details class="faq-item">
-                    <summary>Is insurance included in the rental price?</summary>
+                    <summary>¿El seguro está incluido en el precio del alquiler?</summary>
                     <div class="faq-answer">
-                        <p>Basic insurance is typically included, but we offer several additional coverage options for your peace of mind. You can review all insurance options during the booking process or ask our staff for details.</p>
+                        <p>El seguro básico se incluye típicamente, pero ofrecemos varias opciones de cobertura adicionales para su tranquilidad. Puede revisar todas las opciones de seguro durante el proceso de reserva o preguntar a nuestro personal por detalles.</p>
                     </div>
                 </details>
                 <details class="faq-item">
-                    <summary>Can I have the car delivered to my location?</summary>
+                    <summary>¿Puedo tener el coche entregado a mi ubicación?</summary>
                     <div class="faq-answer">
-                        <p>Yes, we offer a delivery and collection service to airports, hotels, or specific addresses within our service area. Additional fees may apply. Please specify your delivery needs when making a reservation.</p>
+                        <p>Sí, ofrecemos un servicio de entrega y recolección a aeropuertos, hoteles o direcciones específicas dentro de nuestro área de servicio. Pueden aplicarse tarifas adicionales. Especifique sus necesidades de entrega al hacer una reserva.</p>
                     </div>
                 </details>
                 <details class="faq-item">
-                    <summary>What is you cancellation policy?</summary>
+                    <summary>¿Cuál es su política de cancelación?</summary>
                     <div class="faq-answer">
-                        <p>You can cancel for free up to 48 hours before your scheduled pick-up time. Cancellations made within 48 hours may be subject to a fee. Please refer to our terms and conditions for full details.</p>
+                        <p>Puede cancelar de forma gratuita hasta 48 horas antes de su hora de recogida programada. Las cancelaciones hechas después de 48 horas pueden ser objeto de una tarifa. Consulte nuestros términos y condiciones para obtener más detalles.</p>
                     </div>
                 </details>
             </div>
@@ -91,23 +102,23 @@
         <div class="container footer-content">
             <div class="footer-about">
                 <img src="src/img/lings-logo.png" alt="LingsCars Logo" class="footer-logo">
-                <p>Your premium car rental experience starts here.</p>
+                <p>Tu experiencia de renta de vehículos premium empieza aquí.</p>
             </div>
             <div class="footer-services">
-                <h4>Services</h4>
+                <h4>Servicios</h4> 
                 <ul>
-                    <li><a href="#">Luxury Car Rental</a></li>
-                    <li><a href="#">Sports Car Rental</a></li>
-                    <li><a href="#">Wedding Cars</a></li>
-                    <li><a href="#">Corporate Rentals</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Vehículos luxuriosos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Vehículos deportivos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Vehículos de boda</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Alquiler corporativo</a></li>
                 </ul>
             </div>
             <div class="footer-contact">
-                <h4>Contact Info</h4>
+                <h4>Contáctanos</h4>
                 <ul>
                     <li><i class="fas fa-phone-alt"></i> 0191 460 9444</li>
                     <li><i class="fas fa-envelope"></i> sales@lingscars.com</li>
-                    <li><i class="fas fa-clock"></i> Mon-Fri 9am-5:30pm</li>
+                    <li><i class="fas fa-clock"></i> Lunes-Viernes 9am-5:30pm</li>
                 </ul>
             </div>
         </div>

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LingsCars - Premium Car Rental</title>
     <link rel="stylesheet" href="src/css/index.css">
+    <link rel="stylesheet" href="src/css/general.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
@@ -15,9 +16,9 @@
             </div>
             <nav class="main-nav">
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About us</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">Sobre nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contáctanos</a></li>
                 </ul>
             </nav>
         </div>
@@ -26,13 +27,13 @@
     <section class="hero">
         <div class="container hero-content">
             <div class="hero-text">
-                <h1 class="hero-reveal title">Drive Your Dreams</h1>
-                <p class="hero-reveal subtitle">Experience luxury and performance with our premium car rental collection.</p>
+                <h1 class="hero-reveal title">Conduce tus sueños</h1>
+                <p class="hero-reveal subtitle">Experimenta nuestra colección de vehículos premium.</p>
                 <div class="hero-buttons hero-reveal">
-                    <a href="#" class="btn-primary">Book now</a>
+                    <a href="#" class="btn-primary">Buscar ahora</a>
                     <a href="#" class="btn btn-secondary">
-                        <span class="text text-1">View cars</span>
-                        <span class="text text-2">View cars</span>
+                        <span class="text text-1">Ver autos</span>
+                        <span class="text text-2">Ver autos</span>
                     </a>
                 </div>
             </div>
@@ -45,38 +46,38 @@
     <section class="search-form-section">
         <div class="container">
             <div class="search-form-container">
-                <h2>Find Your Perfect Car</h2>
+                <h2>Encuentra tu auto perfecto</h2>
                 <form class="search-form">
                     <div class="form-group">
-                        <label for="location">Location</label>
+                        <label for="location">Ubicación</label>
                         <select id="location" name="location">
-                            <option>Select Location</option>
+                            <option>Seleccionar Ubicación</option>
                         </select>
                     </div>
                     <div class="form-group">
-                        <label for="date">Date</label>
+                        <label for="date">Fecha</label>
                         <input type="date" id="date" name="date" placeholder="mm/dd/yyyy">
                     </div>
                     <div class="form-group">
-                        <label for="return-date">Return Date</label>
+                        <label for="return-date">Fecha de retorno</label>
                         <input type="date" id="return-date" name="return-date" placeholder="mm/dd/yyyy">
                     </div>
                     <div class="form-group">
-                        <label for="car-type">Car Type</label>
+                        <label for="car-type">Tipo de carro</label>
                         <select id="car-type" name="car-type">
-                            <option>Select Type</option>
+                            <option>Seleccionar tipo</option>
                         </select>
                     </div>
                 </form>
-                <button type="submit" class="btn-search"><i class="fas fa-search"></i> Search Car</button>
+                <button type="submit" class="btn-search"><i class="fas fa-search"></i> Buscar auto</button>
             </div>
         </div>
     </section>
 
     <section class="featured-vehicles">
-        <h2>Featured Vehicles</h2>
+        <h2>Nuestros vehículos</h2>
         <div class="line"></div>
-        <p class="subtitle">Discover our handpicked selection of premium vehicles</p>
+        <p class="subtitle">Descubre nuestra selección de vehículos premium</p>
         <div class="container-carousel">
             <button class="slider-arrow prev"><i class="fas fa-chevron-left"></i></button>
 
@@ -87,8 +88,8 @@
                         <div class="lateral-line"></div>
                         <div class="card-content">
                             <h3>Renault CLIO</h3>
-                            <p>6 versions available from</p>
-                            <p class="price"><span>$210</span> </br> per month inc VAT</p>
+                            <p>6 versiones disponibles desde</p>
+                            <p class="price"><span>$210</span> </br> por mes incluido IGV</p>
                         </div>
                     </div>
                     <div class="vehicle-card">
@@ -96,8 +97,8 @@
                         <div class="lateral-line"></div>
                         <div class="card-content">
                             <h3>Hyundai I20</h3>
-                            <p>9 versions available from</p>
-                            <p class="price"><span>$177</span> </br> per month inc VAT</p>
+                            <p>9 versiones disponibles desde</p>
+                            <p class="price"><span>$177</span> </br> por mes incluido IGV</p>
                         </div>
                     </div>
                     <div class="vehicle-card">
@@ -105,8 +106,8 @@
                         <div class="lateral-line"></div>
                         <div class="card-content">
                             <h3>Renault CLIO</h3>
-                            <p>6 versions available from</p>
-                            <p class="price"><span>$190</span> </br> per month inc VAT</p>
+                            <p>6 versiones disponibles desde</p>
+                            <p class="price"><span>$190</span> </br> por mes incluido IGV</p>
                         </div>
                     </div>
                     <div class="vehicle-card">
@@ -114,8 +115,8 @@
                         <div class="lateral-line"></div>
                         <div class="card-content">
                             <h3>Toyota Aygo X</h3>
-                            <p>16 versions available from</p>
-                            <p class="price"><span>$201</span> </br> per month inc VAT</p>
+                            <p>16 versiones disponibles desde</p>
+                            <p class="price"><span>$201</span> </br> por mes incluido IGV</p>
                         </div>
                     </div>
                     <div class="vehicle-card">
@@ -123,8 +124,8 @@
                         <div class="lateral-line"></div>
                         <div class="card-content">
                             <h3>Seat Arona</h3>
-                            <p>18 versions available from</p>
-                            <p class="price"><span>$205</span> </br> per month inc VAT</p>
+                            <p>18 versiones disponibles desde</p>
+                            <p class="price"><span>$205</span> </br> por mes incluido IGV</p>
                         </div>
                     </div>
                     <div class="vehicle-card">
@@ -132,8 +133,8 @@
                         <div class="lateral-line"></div>
                         <div class="card-content">
                             <h3>MG Motor UK HS</h3>
-                            <p>6 versions available from</p>
-                            <p class="price"><span>$211</span> </br> per month inc VAT</p>
+                            <p>6 versiones disponibles desde</p>
+                            <p class="price"><span>$211</span> </br> por mes incluido IGV</p>
                         </div>
                     </div>
                     <div class="vehicle-card">
@@ -141,8 +142,8 @@
                         <div class="lateral-line"></div>
                         <div class="card-content">
                             <h3>Kia Picanto</h3>
-                            <p>10 versions available from</p>
-                            <p class="price"><span>$216</span> </br> per month inc VAT</p>
+                            <p>10 versiones disponibles desde</p>
+                            <p class="price"><span>$216</span> </br> por mes incluido IGV</p>
                         </div>
                     </div>
                 </div>
@@ -156,23 +157,23 @@
         <div class="container footer-content">
             <div class="footer-about">
                 <img src="src/img/lings-logo.png" alt="LingsCars Logo" class="footer-logo">
-                <p>Your premium car rental experience starts here.</p>
+                <p>Tu experiencia de renta de vehículos premium empieza aquí.</p>
             </div>
             <div class="footer-services">
-                <h4>Services</h4>
+                <h4>Servicios</h4>
                 <ul>
-                    <li><a href="#">Luxury Car Rental</a></li>
-                    <li><a href="#">Sports Car Rental</a></li>
-                    <li><a href="#">Wedding Cars</a></li>
-                    <li><a href="#">Corporate Rentals</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Vehículos luxuriosos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Vehículos deportivos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Vehículos de boda</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Alquiler corporativo</a></li>
                 </ul>
             </div>
             <div class="footer-contact">
-                <h4>Contact Info</h4>
+                <h4>Contáctanos</h4>
                 <ul>
                     <li><i class="fas fa-phone-alt"></i> 0191 460 9444</li>
                     <li><i class="fas fa-envelope"></i> sales@lingscars.com</li>
-                    <li><i class="fas fa-clock"></i> Mon-Fri 9am-5:30pm</li>
+                    <li><i class="fas fa-clock"></i> Lunes-Viernes 9am-5:30pm</li>
                 </ul>
             </div>
         </div>

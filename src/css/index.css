@@ -42,7 +42,7 @@ p, h4, h3, h2, h1 {
 }
 
 .line {
-        width: 100px;
+    width: 100px;
     height: 3px;
     background-color: var(--golden);
     position: relative;
@@ -276,6 +276,11 @@ p, h4, h3, h2, h1 {
     height: 48px;
     width: 100%;
     font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.btn-search:hover {
+    background-color: #aa7458;
 }
 
 /* Seccion vehiculos */
